@@ -1,0 +1,9 @@
+# YouTube periodically refreshes cookies while it's open;
+# open YouTube, run the command "yt-dlp", and then close all YouTube tabs
+
+--cookies-from-browser firefox
+--continue
+--restrict-filenames
+--output "%USERPROFILE%\Downloads\yt-dlp\%(extractor)s\%(uploader)s\%(title)s.%(ext)s"
+--abort-on-unavailable-fragments
+--abort-on-error
