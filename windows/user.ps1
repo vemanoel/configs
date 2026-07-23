@@ -45,6 +45,7 @@ winget install --id Notion.Notion -e --accept-package-agreements --accept-source
 winget install --id Notion.NotionCalendar -e --accept-package-agreements --accept-source-agreements
 winget install --id Telegram.TelegramDesktop -e --accept-package-agreements --accept-source-agreements
 winget install --id qBittorrent.qBittorrent -e --accept-package-agreements --accept-source-agreements
+winget install --id Meltytech.Shotcut -e --accept-package-agreements --accept-source-agreements
 winget install --id yt-dlp.yt-dlp -e --accept-package-agreements --accept-source-agreements
 winget install --id Google.PlatformTools -e --accept-package-agreements --accept-source-agreements
 winget install --id ZedIndustries.Zed -e --accept-package-agreements --accept-source-agreements
