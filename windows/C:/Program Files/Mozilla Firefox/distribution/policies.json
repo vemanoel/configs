@@ -31,6 +31,9 @@
 		"DisplayBookmarksToolbar": "newtab",
 		"ManagedBookmarks": [
 			{
+				"toplevel_name": "bookmarks"
+			},
+			{
 				"name": "reddit",
 				"url": "https://www.reddit.com"
 			},
