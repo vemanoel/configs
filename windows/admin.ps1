@@ -21,4 +21,3 @@ $file = Join-Path $env:TEMP $msi.name
 Invoke-WebRequest -Uri $msi.browser_download_url -OutFile $file
 Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$file`" /qn /norestart" -Wait
 Remove-Item $file -Force
-# https://support.google.com/android/answer/12623953
