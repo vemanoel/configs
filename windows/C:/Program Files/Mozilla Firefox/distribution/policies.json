@@ -29,6 +29,38 @@
 			"Locked": true
 		},
 		"DisplayBookmarksToolbar": "newtab",
+		"ManagedBookmarks": [
+			{
+				"name": "Books",
+				"children": [
+					{
+						"name": "Anna’s Archive",
+						"url": "https://annas-archive.gl"
+					},
+					{
+						"name": "Só Quadrinhos",
+						"url": "https://site.soquadrinhos.com"
+					},
+					{
+						"name": "Só quadrinhos Reserva",
+						"url": "https://soquadrinhoss.blogspot.com/p/busca-rapida.html"
+					}
+				]
+			},
+			{
+				"name": "Concursos",
+				"children": [
+					{
+						"name": "Estude Grátis",
+						"url": "https://www.estudegratis.com.br"
+					},
+					{
+						"name": "Ache Concursos",
+						"url": "https://www.acheconcursos.com.br"
+					}
+				]
+			}
+		],
 		"PopupBlocking": {
 			"Allow": [],
 			"Default": false,
