@@ -31,32 +31,53 @@
 		"DisplayBookmarksToolbar": "newtab",
 		"ManagedBookmarks": [
 			{
-				"name": "Books",
+				"name": "reddit",
+				"url": "https://www.reddit.com"
+			},
+			{
+				"name": "youtube",
+				"url": "https://www.youtube.com"
+			},
+			{
+				"name": "github",
+				"url": "https://github.com"
+			},
+			{
+				"name": "books",
 				"children": [
 					{
-						"name": "Anna’s Archive",
+						"name": "anna’s archive",
 						"url": "https://annas-archive.gl"
 					},
 					{
-						"name": "Só Quadrinhos",
+						"name": "só quadrinhos",
 						"url": "https://site.soquadrinhos.com"
 					},
 					{
-						"name": "Só quadrinhos Reserva",
+						"name": "só quadrinhos reserva",
 						"url": "https://soquadrinhoss.blogspot.com/p/busca-rapida.html"
 					}
 				]
 			},
 			{
-				"name": "Concursos",
+				"name": "concursos",
 				"children": [
 					{
-						"name": "Estude Grátis",
+						"name": "estude grátis",
 						"url": "https://www.estudegratis.com.br"
 					},
 					{
-						"name": "Ache Concursos",
+						"name": "ache concursos",
 						"url": "https://www.acheconcursos.com.br"
+					}
+				]
+			},
+			{
+				"name": "tech",
+				"children": [
+					{
+						"name": "hardreset info",
+						"url": "https://www.estudegratis.com.br"
 					}
 				]
 			}
