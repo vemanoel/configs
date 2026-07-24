@@ -2,15 +2,16 @@
 	"policies": {
 		"DownloadDirectory": "${home}/Downloads/firefox",
 		"PromptForDownloadLocation": false,
+		"PasswordManagerEnabled": false,
+		"OfferToSaveLogins": false,
 		"SearchEngines": {
 			"Default": "Google"
 		},
 		"NewTabPage": false,
 		"Homepage": {
-			"Locked": true,
-			"URL": "chrome://browser/content/blanktab.html",
-			"StartPage": "none",
-			"Additional": []
+			"URL": "about:blank",
+			"StartPage": "homepage",
+			"Locked": true
 		},
 		"PictureInPicture": {
 			"Enabled": false,
@@ -23,11 +24,11 @@
 			"Cache": false,
       		"Sessions": false,
 			"Cookies": false,
-			"FormData": false,
-			"History": false,
+			"FormData": true,
+			"History": true,
 			"Locked": true
 		},
-		"DisplayBookmarksToolbar": "never",
+		"DisplayBookmarksToolbar": "newtab",
 		"PopupBlocking": {
 			"Allow": [],
 			"Default": false,
