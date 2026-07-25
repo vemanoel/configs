@@ -42,41 +42,43 @@
 				"url": "https://www.youtube.com"
 			},
 			{
+				"name": "youtube music",
+				"url": "https://music.youtube.com"
+			},
+			{
 				"name": "github",
 				"url": "https://github.com"
 			},
 			{
-				"name": "books",
-				"children": [
-					{
-						"name": "anna’s archive",
-						"url": "https://annas-archive.gl"
-					},
-					{
-						"name": "só quadrinhos",
-						"url": "https://site.soquadrinhos.com"
-					},
-					{
-						"name": "só quadrinhos reserva",
-						"url": "https://soquadrinhoss.blogspot.com/p/busca-rapida.html"
-					}
-				]
+				"name": "notion",
+				"url": "https://app.notion.com"
 			},
 			{
-				"name": "concursos",
-				"children": [
-					{
-						"name": "estude grátis",
-						"url": "https://www.estudegratis.com.br"
-					},
-					{
-						"name": "ache concursos",
-						"url": "https://www.acheconcursos.com.br"
-					}
-				]
+				"name": "notion calendar",
+				"url": "https://calendar.notion.so"
 			},
 			{
-				"name": "tech",
+				"name": "estude grátis",
+				"url": "https://www.estudegratis.com.br"
+			},
+			{
+				"name": "ache concursos",
+				"url": "https://www.acheconcursos.com.br"
+			},
+			{
+				"name": "anna’s archive",
+				"url": "https://annas-archive.gl"
+			},
+			{
+				"name": "só quadrinhos",
+				"url": "https://site.soquadrinhos.com"
+			},
+			{
+				"name": "só quadrinhos reserva",
+				"url": "https://soquadrinhoss.blogspot.com/p/busca-rapida.html"
+			},
+			{
+				"name": "others",
 				"children": [
 					{
 						"name": "hardreset info",
