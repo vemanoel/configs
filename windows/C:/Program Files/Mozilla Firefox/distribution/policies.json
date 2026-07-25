@@ -46,6 +46,10 @@
 				"url": "https://music.youtube.com/library"
 			},
 			{
+				"name": "nextdns",
+				"url": "https://my.nextdns.io"
+			},
+			{
 				"name": "github",
 				"url": "https://github.com"
 			},
