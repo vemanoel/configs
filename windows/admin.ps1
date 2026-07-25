@@ -21,3 +21,6 @@ $file = Join-Path $env:TEMP $msi.name
 Invoke-WebRequest -Uri $msi.browser_download_url -OutFile $file
 Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$file`" /qn /norestart" -Wait
 Remove-Item $file -Force
+
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value 0
+Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Type DWord -Value 0
