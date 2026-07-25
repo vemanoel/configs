@@ -130,7 +130,8 @@
 	        "Value": 0,
 	        "Status": "default",
 	        "Type": "number"
-	      }
+	      },
+		  "browser.translations.automaticallyPopup": false
 	    }
 	}
 }
