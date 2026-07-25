@@ -41,8 +41,6 @@ winget install --id Mozilla.Firefox -e --accept-package-agreements --accept-sour
 winget install --id 9NKSQGP7F2NH -s msstore -e --accept-package-agreements --accept-source-agreements # whatsapp
 winget install --id RARLab.WinRAR -e --accept-package-agreements --accept-source-agreements
 winget install --id Anki.Anki -e --accept-package-agreements --accept-source-agreements
-winget install --id Notion.Notion -e --accept-package-agreements --accept-source-agreements
-winget install --id Notion.NotionCalendar -e --accept-package-agreements --accept-source-agreements
 winget install --id Telegram.TelegramDesktop -e --accept-package-agreements --accept-source-agreements
 winget install --id qBittorrent.qBittorrent -e --accept-package-agreements --accept-source-agreements
 winget install --id Meltytech.Shotcut -e --accept-package-agreements --accept-source-agreements
