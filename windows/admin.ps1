@@ -23,4 +23,3 @@ Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$file`" /qn /norestart
 Remove-Item $file -Force
 
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value 0
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Type DWord -Value 0
