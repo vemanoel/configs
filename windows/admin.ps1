@@ -14,12 +14,3 @@ Get-ChildItem $root -Recurse -File | ForEach-Object {
     New-Item -ItemType Directory -Path (Split-Path $dest) -Force | Out-Null
     Copy-Item $_.FullName $dest -Force
 }
-
-$release = Invoke-RestMethod -Uri "https://api.github.com/repos/rustdesk/rustdesk/releases/latest"
-$msi = $release.assets | Where-Object { $_.name -like "*x86_64.msi" } | Select-Object -First 1
-$file = Join-Path $env:TEMP $msi.name
-Invoke-WebRequest -Uri $msi.browser_download_url -OutFile $file
-Start-Process -FilePath "msiexec.exe" -ArgumentList "/i `"$file`" /qn /norestart" -Wait
-Remove-Item $file -Force
-
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value 0
