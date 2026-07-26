@@ -34,18 +34,11 @@ Get-AppxPackage *Microsoft.Paint* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsNotepad* | Remove-AppxPackage
 Get-AppxPackage *WebMediaExtensions* | Remove-AppxPackage
 
-winget install --id RaveInc.Rave -e --accept-package-agreements --accept-source-agreements --ignore-security-hash
-winget install --id BlueStack.BlueStacks -e --accept-package-agreements --accept-source-agreements
-winget install --id Discord.Discord -e --accept-package-agreements --accept-source-agreements
+# winget install --id RaveInc.Rave -e --accept-package-agreements --accept-source-agreements --ignore-security-hash
+# winget install --id BlueStack.BlueStacks -e --accept-package-agreements --accept-source-agreements
+# winget install --id Discord.Discord -e --accept-package-agreements --accept-source-agreements
 winget install --id Mozilla.Firefox -e --accept-package-agreements --accept-source-agreements
 winget install --id 9NKSQGP7F2NH -s msstore -e --accept-package-agreements --accept-source-agreements # whatsapp
 winget install --id RARLab.WinRAR -e --accept-package-agreements --accept-source-agreements
 winget install --id Anki.Anki -e --accept-package-agreements --accept-source-agreements
 winget install --id Telegram.TelegramDesktop -e --accept-package-agreements --accept-source-agreements
-winget install --id qBittorrent.qBittorrent -e --accept-package-agreements --accept-source-agreements
-winget install --id yt-dlp.yt-dlp -e --accept-package-agreements --accept-source-agreements
-winget install --id Google.PlatformTools -e --accept-package-agreements --accept-source-agreements
-winget install --id ZedIndustries.Zed -e --accept-package-agreements --accept-source-agreements
-winget install --id GoLang.Go -e --accept-package-agreements --accept-source-agreements
-winget install --id Git.Git -e --accept-package-agreements --accept-source-agreements
-winget install --id Casey.Just -e --accept-package-agreements --accept-source-agreements
