@@ -135,11 +135,6 @@
 				"Status": "default",
 				"Type": "number"
 			},
-			"browser.link.open_newwindow": {
-				"Value": 3,
-				"Status": "default",
-				"Type": "number"
-			},
 			"browser.translations.automaticallyPopup": false
 	    }
 	}
