@@ -115,27 +115,32 @@
 			}
 		},
 		"Preferences": {
-	      "ui.systemUsesDarkTheme": {
-	        "Value": 1,
-	        "Status": "default",
-	        "Type": "number"
-	      },
-	      "ui.systemUsesDarkTheme": {
-	        "Value": 1,
-	        "Status": "default",
-	        "Type": "number"
-	      },
-	      "browser.theme.content-theme": {
-	        "Value": 0,
-	        "Status": "default",
-	        "Type": "number"
-	      },
-	      "browser.theme.toolbar-theme": {
-	        "Value": 0,
-	        "Status": "default",
-	        "Type": "number"
-	      },
-		  "browser.translations.automaticallyPopup": false
+			"ui.systemUsesDarkTheme": {
+				"Value": 1,
+				"Status": "default",
+				"Type": "number"
+			},
+			"ui.systemUsesDarkTheme": {
+				"Value": 1,
+				"Status": "default",
+				"Type": "number"
+			},
+			"browser.theme.content-theme": {
+				"Value": 0,
+				"Status": "default",
+				"Type": "number"
+			},
+			"browser.theme.toolbar-theme": {
+				"Value": 0,
+				"Status": "default",
+				"Type": "number"
+			},
+			"browser.link.open_newwindow": {
+				"Value": 3,
+				"Status": "default",
+				"Type": "number"
+			},
+			"browser.translations.automaticallyPopup": false
 	    }
 	}
 }
