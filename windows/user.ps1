@@ -72,6 +72,6 @@ New-ItemProperty -Path $path -Name TaskbarResume -PropertyType DWord -Value 0 -F
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
 New-Item -Path $path -Force | Out-Null
-Set-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0
-Set-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0
+Set-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0 -Force
+Set-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0 -Force
 Start-Process "$env:windir\Resources\Themes\dark.theme"
