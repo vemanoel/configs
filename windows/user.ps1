@@ -1,6 +1,6 @@
-winget uninstall -e --id Microsoft.GameInput --silent --disable-interactivity --force
-winget uninstall -e --id Microsoft.OneDrive --silent --disable-interactivity --force
-winget uninstall -e --id Microsoft.Teams --silent --disable-interactivity --force
+winget uninstall --exact --id Microsoft.GameInput --silent --disable-interactivity --force
+winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivity --force
+winget uninstall --exact --id Microsoft.Teams --silent --disable-interactivity --force
 
 Get-AppxPackage Microsoft.WindowsCamera | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsCalculator | Remove-AppxPackage
@@ -34,11 +34,11 @@ Get-AppxPackage *Microsoft.Paint* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsNotepad* | Remove-AppxPackage
 Get-AppxPackage *WebMediaExtensions* | Remove-AppxPackage
 
-# winget install --id RaveInc.Rave -e --accept-package-agreements --accept-source-agreements --ignore-security-hash
-# winget install --id BlueStack.BlueStacks -e --accept-package-agreements --accept-source-agreements
-# winget install --id Discord.Discord -e --accept-package-agreements --accept-source-agreements
-winget install --id Mozilla.Firefox -e --accept-package-agreements --accept-source-agreements
-winget install --id 9NKSQGP7F2NH -s msstore -e --accept-package-agreements --accept-source-agreements # whatsapp
-winget install --id RARLab.WinRAR -e --accept-package-agreements --accept-source-agreements
-winget install --id Anki.Anki -e --accept-package-agreements --accept-source-agreements
-winget install --id Telegram.TelegramDesktop -e --accept-package-agreements --accept-source-agreements
+# winget install --id RaveInc.Rave --exact --silent --accept-package-agreements --accept-source-agreements --ignore-security-hash
+# winget install --id BlueStack.BlueStacks --exact --silent --accept-package-agreements --accept-source-agreements
+# winget install --id Discord.Discord --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Mozilla.Firefox --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id 9NKSQGP7F2NH -s msstore --silent --exact --accept-package-agreements --accept-source-agreements # whatsapp
+winget install --id RARLab.WinRAR --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Anki.Anki --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-agreements --accept-source-agreements
