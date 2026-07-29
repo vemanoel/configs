@@ -1,3 +1,5 @@
+'Y' | winget search PowerToys --source msstore
+
 winget uninstall --exact --id Microsoft.GameInput --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.Teams --silent --disable-interactivity --force
