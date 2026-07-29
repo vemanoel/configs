@@ -10,6 +10,7 @@ Get-AppxPackage Microsoft.Todos | Remove-AppxPackage
 Get-AppxPackage *Clipchamp* | Remove-AppxPackage
 Get-AppxPackage *BingNews* | Remove-AppxPackage
 Get-AppxPackage *BingSearch* | Remove-AppxPackage
+Get-AppxPackage *Xbox.TCUI* | Remove-AppxPackage
 Get-AppxPackage *XboxGamingOverlay* | Remove-AppxPackage
 Get-AppxPackage *XboxIdentityProvider* | Remove-AppxPackage
 Get-AppxPackage *XboxSpeechToTextOverlay* | Remove-AppxPackage
