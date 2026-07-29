@@ -9,8 +9,9 @@ powercfg /setactive $guid
 
 $root = Join-Path $PSScriptRoot "C:"
 Get-ChildItem $root -Recurse -File | ForEach-Object {
-    $dest = $_.FullName.Replace($root, "C:")
-    $dest = $dest.Replace("C:\Users\user", "C:\Users\$env:USERNAME")
+    $relative = $_.FullName.Substring($root.Length).TrimStart("\")
+    $dest = "C:\" + $relative
+    $dest = $dest.Replace("{USER}", $env:USERNAME)
     New-Item -ItemType Directory -Path (Split-Path $dest) -Force | Out-Null
     Copy-Item $_.FullName $dest -Force
 }
