@@ -16,3 +16,33 @@ Get-ChildItem $root -Recurse -File | ForEach-Object {
 }
 
 Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value 0
+
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name AmbientLightingEnabled -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name ControlledByForegroundApp -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_NotifyNewApps -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_TrackDocs -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_IrisRecommendations -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_AccountNotifications -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name ShowTaskViewButton -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name TaskbarResume -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+New-Item -Path $path -Force | Out-Null
+Set-ItemProperty -Path $path -Name AppsUseLightTheme -Value 0
+Set-ItemProperty -Path $path -Name SystemUsesLightTheme -Value 0
+Start-Process "$env:windir\Resources\Themes\dark.theme"
