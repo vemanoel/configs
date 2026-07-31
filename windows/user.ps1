@@ -37,6 +37,8 @@ Get-AppxPackage *Microsoft.Paint* | Remove-AppxPackage
 Get-AppxPackage *Microsoft.WindowsNotepad* | Remove-AppxPackage
 Get-AppxPackage *WebMediaExtensions* | Remove-AppxPackage
 
+Remove-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Accessibility" -Recurse -Force
+
 # winget install --id RaveInc.Rave --exact --silent --accept-package-agreements --accept-source-agreements --ignore-security-hash
 # winget install --id BlueStack.BlueStacks --exact --silent --accept-package-agreements --accept-source-agreements
 # winget install --id Discord.Discord --exact --silent --accept-package-agreements --accept-source-agreements
