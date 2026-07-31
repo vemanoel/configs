@@ -61,8 +61,8 @@ New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
 
 $path = "HKCU:\Control Panel\Desktop"
-Set-ItemProperty -Path $path -Name MinAnimate -PropertyType DWord -Value 0 -Force | Out-Null
-Set-ItemProperty -Path $path -Name UserPreferencesMask -Type Binary -PropertyType DWord -Value ([byte[]](0x90,0x12,0x07,0x80,0x10,0x00,0x00,0x00)) -Force | Out-Null
+Set-ItemProperty -Path $path -Name MinAnimate -Value 0 -Force | Out-Null
+Set-ItemProperty -Path $path -Name UserPreferencesMask -Type Binary -Value ([byte[]](0x90,0x12,0x07,0x80,0x10,0x00,0x00,0x00)) -Force | Out-Null
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 New-Item -Path $path -Force | Out-Null
