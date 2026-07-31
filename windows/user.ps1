@@ -60,6 +60,14 @@ $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
 
+
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\VisualEffects"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
+
+
+
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name Start_NotifyNewApps -PropertyType DWord -Value 0 -Force | Out-Null
