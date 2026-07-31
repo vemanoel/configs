@@ -46,6 +46,14 @@
 				"url": "https://open.spotify.com"
 			},
 			{
+				"name": "gmail",
+				"url": "https://mail.google.com"
+			},
+			{
+				"name": "reddit",
+				"url": "https://www.reddit.com"
+			},
+			{
 				"name": "nextdns",
 				"url": "https://my.nextdns.io"
 			},
