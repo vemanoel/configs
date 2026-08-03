@@ -61,8 +61,9 @@ New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
 
 $path = "HKCU:\Control Panel\Desktop"
-Set-ItemProperty -Path $path -Name MinAnimate -Value 0 -Force | Out-Null
-Set-ItemProperty -Path $path -Name UserPreferencesMask -Type Binary -Value ([byte[]](0x90,0x12,0x07,0x80,0x10,0x00,0x00,0x00)) -Force | Out-Null
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name MinAnimate -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name UserPreferencesMask -Type Binary -Value ([byte[]](0x90,0x12,0x07,0x80,0x10,0x00,0x00,0x00)) -Force | Out-Null
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
 New-Item -Path $path -Force | Out-Null
@@ -78,6 +79,6 @@ New-ItemProperty -Path $path -Name TaskbarResume -PropertyType DWord -Value 0 -F
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
 New-Item -Path $path -Force | Out-Null
-Set-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0 -Force
-Set-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0 -Force
+New-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0 -Force
+New-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0 -Force
 Start-Process "$env:windir\Resources\Themes\dark.theme"
