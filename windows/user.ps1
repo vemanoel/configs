@@ -82,3 +82,17 @@ New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0 -Force
 New-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0 -Force
 Start-Process "$env:windir\Resources\Themes\dark.theme"
+
+wsl --install kali-linux
+wsl --install Ubuntu
+wsl --install Debian
+wsl --install openSUSE-Tumbleweed
+wsl --install archlinux
+wsl --install FedoraLinux-44
+
+# wsl --unregister kali-linux
+# wsl --unregister Ubuntu
+# wsl --unregister Debian
+# wsl --unregister openSUSE-Tumbleweed
+# wsl --unregister archlinux
+# wsl --unregister FedoraLinux-44
