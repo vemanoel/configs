@@ -1,4 +1,7 @@
-# & ([scriptblock]::Create((irm "https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1"))) -nonInteractive -AllOptions
+wsl --install
+wsl --install --distribution openSUSE-Tumbleweed --no-launch
+
+& ([scriptblock]::Create((irm "https://raw.githubusercontent.com/zoicware/RemoveWindowsAI/main/RemoveWindowsAi.ps1"))) -nonInteractive -AllOptions
 
 winget settings --enable InstallerHashOverride
 
