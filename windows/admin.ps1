@@ -28,6 +28,7 @@ winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivit
 winget uninstall --exact --id Microsoft.Teams --silent --disable-interactivity --force
 winget uninstall --exect --id Microsoft.WSL --silent --disable-interactivity --force
 
+Get-AppxPackage AdvancedMicroDevicesInc-RSXCM | Remove-AppxPackage
 Get-AppxPackage Microsoft.OneDriveSync | Remove-AppxPackage
 Get-AppxPackage Microsoft.ZuneMusic | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsCamera | Remove-AppxPackage
