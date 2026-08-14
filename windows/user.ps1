@@ -9,12 +9,14 @@ winget install --id RARLab.WinRAR --exact --silent --accept-package-agreements -
 winget install --id Anki.Anki --exact --silent --accept-package-agreements --accept-source-agreements
 winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-agreements --accept-source-agreements
 
-Set-ItemProperty `
-    -Path "HKCU:\Software\Microsoft\Lighting" `
-    -Name "UseDynamicLighting" `
-    -Type DWord `
-    -Value 0
-    
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name UseDynamicLighting -Type DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name AmbientLightingEnabled -Type DWord -Value 0 -Force | Out-Null
+
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name SearchboxTaskbarMode -Type DWord -Value 0 -Force | Out-Null
