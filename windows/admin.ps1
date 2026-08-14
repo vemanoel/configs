@@ -72,6 +72,17 @@ Start-Process "$env:windir\Resources\Themes\dark.theme"
 
 'Y' | winget search PowerToys --source msstore
 
+Remove-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Accessibility" -Recurse -Force
+
+# winget install --id RaveInc.Rave --exact --silent --accept-package-agreements --accept-source-agreements --ignore-security-hash
+winget install --id BlueStack.BlueStacks --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Discord.Discord --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Mozilla.Firefox --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id 9NKSQGP7F2NH -s msstore --silent --exact --accept-package-agreements --accept-source-agreements # whatsapp
+winget install --id RARLab.WinRAR --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Anki.Anki --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-agreements --accept-source-agreements
+
 winget uninstall --exact --id Microsoft.GameInput --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.Teams --silent --disable-interactivity --force
