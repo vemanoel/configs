@@ -19,7 +19,56 @@ Get-ChildItem $root -Recurse -File | ForEach-Object {
     Copy-Item $_.FullName $dest -Force
 }
 
-Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy" -Name "VerifiedAndReputablePolicyState" -Value 0
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name UseDynamicLighting -Type DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name AmbientLightingEnabled -Type DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name SearchboxTaskbarMode -Type DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\SearchSettings"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name IsMSACloudSearchEnabled -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name IsAADCloudSearchEnabled -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name IsDeviceSearchHistoryEnabled -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Lighting"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name AmbientLightingEnabled -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name ControlledByForegroundApp -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name EnableTransparency -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Control Panel\Desktop"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name MinAnimate -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name UserPreferencesMask -Type Binary -Value ([byte[]](0x90,0x12,0x07,0x80,0x10,0x00,0x00,0x00)) -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_NotifyNewApps -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_TrackDocs -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_IrisRecommendations -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name Start_AccountNotifications -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name ShowTaskViewButton -PropertyType DWord -Value 0 -Force | Out-Null
+New-ItemProperty -Path $path -Name TaskbarResume -PropertyType DWord -Value 0 -Force | Out-Null
+
+$path = "HKLM:\SYSTEM\CurrentControlSet\Control\CI\Policy"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name "VerifiedAndReputablePolicyState" -Value 0
+
+$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
+New-Item -Path $path -Force | Out-Null
+New-ItemProperty -Path $path -Name AppsUseLightTheme -Type DWord -Value 0 -Force
+New-ItemProperty -Path $path -Name SystemUsesLightTheme -Type DWord -Value 0 -Force
+Start-Process "$env:windir\Resources\Themes\dark.theme"
 
 'Y' | winget search PowerToys --source msstore
 
