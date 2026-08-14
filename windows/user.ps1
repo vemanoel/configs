@@ -12,9 +12,6 @@ winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-a
 $path = "HKCU:\Software\Microsoft\Lighting"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name UseDynamicLighting -Type DWord -Value 0 -Force | Out-Null
-
-$path = "HKCU:\Software\Microsoft\Lighting"
-New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name AmbientLightingEnabled -Type DWord -Value 0 -Force | Out-Null
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Search"
@@ -24,21 +21,12 @@ New-ItemProperty -Path $path -Name SearchboxTaskbarMode -Type DWord -Value 0 -Fo
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\SearchSettings"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name IsMSACloudSearchEnabled -PropertyType DWord -Value 0 -Force | Out-Null
-
-$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\SearchSettings"
-New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name IsAADCloudSearchEnabled -PropertyType DWord -Value 0 -Force | Out-Null
-
-$path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\SearchSettings"
-New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name IsDeviceSearchHistoryEnabled -PropertyType DWord -Value 0 -Force | Out-Null
 
 $path = "HKCU:\Software\Microsoft\Lighting"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name AmbientLightingEnabled -PropertyType DWord -Value 0 -Force | Out-Null
-
-$path = "HKCU:\Software\Microsoft\Lighting"
-New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name ControlledByForegroundApp -PropertyType DWord -Value 0 -Force | Out-Null
 
 $path = "HKCU:\Software\Microsoft\Windows\CurrentVersion\Themes\Personalize"
