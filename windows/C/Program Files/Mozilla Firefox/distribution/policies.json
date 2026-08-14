@@ -21,9 +21,9 @@
 		"DisableTelemetry": true,
 		"SanitizeOnShutdown": {
 			"SiteSettings": false,
-			"Cache": false,
-      		"Sessions": false,
-			"Cookies": false,
+      		"Sessions": true,
+			"Cookies": true,
+			"Cache": true,
 			"FormData": true,
 			"History": true,
 			"Locked": true
