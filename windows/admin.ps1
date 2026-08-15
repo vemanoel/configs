@@ -172,3 +172,4 @@ Remove-Path "C:\Program Files\WindowsApps\Microsoft.WindowsFeedbackHub_2.2606.70
 Remove-Path "C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26062.105.0_x64__cw5n1h2txyewy"
 Remove-Path "C:\Program Files\WindowsApps\Microsoft.ZuneMusic_11.2606.19.0_x64__8wekyb3d8bbwe"
 Remove-Path "C:\Program Files\WindowsApps\Microsoft.Xbox.TCUI_1.24.10001.0_x64__8wekyb3d8bbwe"
+Remove-Path "$HOME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Firefox Private Browsing.lnk"
