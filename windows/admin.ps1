@@ -19,6 +19,9 @@ Get-ChildItem $root -Recurse -File | ForEach-Object {
     Copy-Item $_.FullName $dest -Force
 }
 
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "FontSmoothing" -Value "2"
+Set-ItemProperty -Path "HKCU:\Control Panel\Desktop" -Name "FontSmoothingType" -Value 2
+
 $path = "HKCU:\Software\Microsoft\Lighting"
 New-Item -Path $path -Force | Out-Null
 New-ItemProperty -Path $path -Name UseDynamicLighting -Type DWord -Value 0 -Force | Out-Null
