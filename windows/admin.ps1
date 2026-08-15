@@ -94,6 +94,7 @@ Get-AppxPackage Microsoft.ZuneMusic | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsCamera | Remove-AppxPackage
 Get-AppxPackage Microsoft.WindowsCalculator | Remove-AppxPackage
 Get-AppxPackage Microsoft.Todos | Remove-AppxPackage
+Get-AppxPackage Microsoft.Teams | Remove-AppxPackage
 Get-AppxPackage *Clipchamp* | Remove-AppxPackage
 Get-AppxPackage *BingNews* | Remove-AppxPackage
 Get-AppxPackage *BingSearch* | Remove-AppxPackage
