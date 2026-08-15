@@ -86,7 +86,6 @@ winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-a
 winget uninstall --exact --id Microsoft.GameInput --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.Teams --silent --disable-interactivity --force
-winget uninstall --exect --id Microsoft.WSL --silent --disable-interactivity --force
 
 Get-AppxPackage AdvancedMicroDevicesInc-RSXCM | Remove-AppxPackage
 Get-AppxPackage Microsoft.OneDriveSync | Remove-AppxPackage
