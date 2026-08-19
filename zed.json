@@ -1,15 +1,4 @@
 {
-    "wsl_connections": [
-        {
-            "distro_name": "openSUSE-Tumbleweed",
-            "user": null,
-            "projects": [
-                {
-                    "paths": ["/home/victor/json2"]
-                }
-            ]
-        }
-    ],
     "format_on_save": "on",
     "preview_tabs": {
         "enabled": false
@@ -109,5 +98,13 @@
         "mode": "system",
         "light": "One Light",
         "dark": "One Dark Pro"
-    }
+    },
+    "semantic_tokens": "combined",
+    "lsp": {
+        "gopls": {
+            "initialization_options": {
+                "usePlaceholders": false,
+            },
+        },
+    },
 }
