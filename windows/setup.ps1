@@ -77,11 +77,12 @@ Start-Process "$env:windir\Resources\Themes\dark.theme"
 
 Remove-Item "$env:APPDATA\Microsoft\Windows\Start Menu\Programs\Accessibility" -Recurse -Force
 
-winget install --id Mozilla.Firefox --exact --silent --accept-package-agreements --accept-source-agreements --scope user
-winget install --id Anki.Anki --exact --silent --accept-package-agreements --accept-source-agreements --scope user
-winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-agreements --accept-source-agreements --scope user
-winget install --id Git.Git --exact --silent --accept-package-agreements --accept-source-agreements --scope user
-winget install --id jdx.mise --exact --silent --accept-package-agreements --accept-source-agreements --scope user
+winget install --id Mozilla.Firefox --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Anki.Anki --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Telegram.TelegramDesktop --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id Git.Git --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id jdx.mise --exact --silent --accept-package-agreements --accept-source-agreements
+winget install --id ZedIndustries.Zed --exact --silent --accept-package-agreements --accept-source-agreements
 
 winget uninstall --exact --id Microsoft.GameInput --silent --disable-interactivity --force
 winget uninstall --exact --id Microsoft.OneDrive --silent --disable-interactivity --force
