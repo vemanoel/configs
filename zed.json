@@ -3,6 +3,9 @@
     "html": false,
     "symbols": true,
   },
+  "search": {
+    "case_sensitive": true
+  },
   "format_on_save": "on",
   "preview_tabs": {
     "enabled": false,
